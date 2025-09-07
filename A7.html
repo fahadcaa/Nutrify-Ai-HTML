@@ -1,0 +1,152 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B600%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #ea2a33;
+        --secondary-color: #f7f7f7;
+        --text-primary: #1e1e1e;
+        --text-secondary: #6b7280;
+      }
+      .safe {
+        color: #22c55e;
+        background-color: #f0fdf4;
+      }
+      .caution {
+        color: #f97316;
+        background-color: #fff7ed;
+      }
+      .danger {
+          color: #ef4444;
+          background-color: #fef2f2;
+      }
+     </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-50">
+<div class="relative flex size-full min-h-screen flex-col" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<header class="sticky top-0 z-10 bg-white/80 backdrop-blur-sm">
+<div class="flex items-center justify-between p-4">
+<button class="flex size-10 items-center justify-center rounded-full text-gray-600">
+<span class="material-symbols-outlined">
+              arrow_back_ios_new
+              </span>
+</button>
+<h1 class="text-xl font-bold text-gray-800">Scan History</h1>
+<div class="flex items-center gap-2">
+<button class="flex size-10 items-center justify-center rounded-full text-gray-600">
+<span class="material-symbols-outlined">
+                    search
+                </span>
+</button>
+<button class="flex size-10 items-center justify-center rounded-full text-gray-600">
+<span class="material-symbols-outlined">
+                    filter_list
+                </span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto px-4 py-6">
+<div class="space-y-4">
+<a class="flex items-center gap-4 rounded-xl bg-white p-4 shadow-sm transition-transform duration-200 hover:scale-[1.02]" href="#">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAUmAp9qI4FObPOVtyK1whIDju6-T_kRujdYKDs1sNfrs0HqeWxH_FvXkRXRLecHv-kEgvDQAmtsLt6WT-Wgju9nPnJPXiniyEGvKNysXqUkx45K59j-NY4nLb77p2g5QiqxAq_DHU7hVYmBVZUGy9Dr1FeD5Sa3XMFUNvN8uJ0zo-Klj9uNSI_w3aP7EtxmPKptFRS5KsEpgZqVLG_DxzYHziADZw_gV5yneV4zFqGi7nJbuzdzpZXC4avUHdkDoBRyvUbB_haErY");'></div>
+<div class="flex-1">
+<p class="font-semibold text-gray-800">Organic Almond Milk</p>
+<p class="text-sm text-gray-500">20 Jan 2024, 10:30 AM</p>
+</div>
+<div class="safe flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-medium">
+<span class="material-symbols-outlined text-base">
+                check_circle
+              </span>
+<span>Safe</span>
+</div>
+</a>
+<a class="flex items-center gap-4 rounded-xl bg-white p-4 shadow-sm transition-transform duration-200 hover:scale-[1.02]" href="#">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBrfr5H3eaAb6UNr0LbR6Fy50UZCwiEDwqNmq6H9t26Px4DakBi_kn5c9KVKwWgDPvnqnyvGHpmCtOKtrjZnvoQ9Bb464YMgoILOFWb0NWl5i5gni08IE6hvHO9Dzt78KvuGtIDXpWMh81UacV6hvpV4xIm_VDUdLugZV1I65Im2gt_d94ngYqMMYIYjaSKtN9QWQMVC_GA6c9JJO5-omlqenLz43KLqoIwRK93zSJAl9ex349-XwvES1AVsPIHQFwdDbqi5PSAPoo");'></div>
+<div class="flex-1">
+<p class="font-semibold text-gray-800">Gluten-Free Bread</p>
+<p class="text-sm text-gray-500">18 Jan 2024, 2:15 PM</p>
+</div>
+<div class="caution flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-medium">
+<span class="material-symbols-outlined text-base">
+                    warning
+                </span>
+<span>Caution</span>
+</div>
+</a>
+<a class="flex items-center gap-4 rounded-xl bg-white p-4 shadow-sm transition-transform duration-200 hover:scale-[1.02]" href="#">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCizquFqlXhWlwOGNFA3cXr92YTmU7_KsdVjPToMcWPqkug0dxudpXFZTC5RSzIROBioBI_lFsEDPIWU_5A7blwMKJH2SkM54UXtK7C0fIHer96N6JXBBcEuaDTdpMzWdHr16zA3SVs4hDqSLQtMjDkY2r92csyUU96DZabq-kHfFKIfrogCD0N965UxBcIpvwAOBe2LCAqyjUFPc3y9zG4FUTX100MITQQY0RXeYPdILMfHDawCoZOyBZXBZRakXFkfvyHmydaWXk");'></div>
+<div class="flex-1">
+<p class="font-semibold text-gray-800">Vegan Cheese</p>
+<p class="text-sm text-gray-500">15 Jan 2024, 6:45 PM</p>
+</div>
+<div class="safe flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-medium">
+<span class="material-symbols-outlined text-base">
+                    check_circle
+                </span>
+<span>Safe</span>
+</div>
+</a>
+<a class="flex items-center gap-4 rounded-xl bg-white p-4 shadow-sm transition-transform duration-200 hover:scale-[1.02]" href="#">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBpVTcjLoNfyTcgPMHpL505BQ9-uXE763Csaj3VVzVNrFZ4pn4VJNEpvxP9DOwcbkzb3aSaNZSJvX9ZCtBmwPzUsD0xUPX6u8jsGZoeOWs1X4l3bQtb5p22gl0pdRfA4GqRF1xX_bgGjGB1oyGnXEHXj8MYgm1LyDzbqpuh8VEy6REShI1d84e672LYn5IONNgrWls1ypz5Zkk-eFpwa1HNW_7NBytSGakIOnxBb6OZluWmPSjVRK90xm7RXUt6iyrR2J9jTA3IPUU");'></div>
+<div class="flex-1">
+<p class="font-semibold text-gray-800">Plant-Based Burger</p>
+<p class="text-sm text-gray-500">12 Jan 2024, 12:00 PM</p>
+</div>
+<div class="caution flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-medium">
+<span class="material-symbols-outlined text-base">
+                    warning
+                </span>
+<span>Caution</span>
+</div>
+</a>
+<a class="flex items-center gap-4 rounded-xl bg-white p-4 shadow-sm transition-transform duration-200 hover:scale-[1.02]" href="#">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-16" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBQzyO1tvlsBvoYsRUptqq83U4scKfuHrLrihZnpJs83tnl0DsA19W66866-vNGmdIhVWUedLBA5DKXScLDGJPekLULJwAUDtuME7i2fQC7LWV7BN-xV6bU2NfQSpAV8-g40gqR_EsvxnQo6LiHNbm_kvwBKkuge8Y0JFM0f56T4hk-QP6JF2Du3UO8hooiVp6wJRje0X9SazMK4wi0fE0AcCXKJ76YZ-2uO6eKAKLWrQkJ8BnoUi9YELOC4CQxmuH536t6FSSWXGU");'></div>
+<div class="flex-1">
+<p class="font-semibold text-gray-800">Natural Peanut Butter</p>
+<p class="text-sm text-gray-500">10 Jan 2024, 8:00 AM</p>
+</div>
+<div class="safe flex items-center gap-1.5 rounded-full px-3 py-1 text-sm font-medium">
+<span class="material-symbols-outlined text-base">
+                    check_circle
+                </span>
+<span>Safe</span>
+</div>
+</a>
+</div>
+</main>
+<footer class="sticky bottom-0 border-t border-gray-200 bg-white/80 backdrop-blur-sm">
+<nav class="flex items-center justify-around p-2">
+<a class="flex flex-col items-center gap-1 px-4 py-2 text-gray-500 hover:text-[var(--primary-color)] transition-colors" href="#">
+<span class="material-symbols-outlined">
+                home
+             </span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 rounded-full bg-red-50 px-4 py-2 text-[var(--primary-color)]" href="#">
+<span class="material-symbols-outlined">
+                history
+             </span>
+<span class="text-xs font-medium">History</span>
+</a>
+<a class="flex flex-col items-center gap-1 px-4 py-2 text-gray-500 hover:text-[var(--primary-color)] transition-colors" href="#">
+<span class="material-symbols-outlined">
+                person
+            </span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>
