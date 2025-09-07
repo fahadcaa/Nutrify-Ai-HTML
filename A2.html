@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #ea2a33;
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-50">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<div class="flex flex-col">
+<div class="flex items-center p-4 pb-2 justify-between">
+<button class="text-gray-800 flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-gray-200 transition-colors">
+<span class="material-symbols-outlined text-2xl">
+              arrow_back
+              </span>
+</button>
+<h2 class="text-gray-900 text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-10">Dietary Preferences</h2>
+</div>
+<div class="px-4 mt-6">
+<h3 class="text-gray-900 text-xl font-bold leading-tight tracking-[-0.015em] pb-3">Dietary Choices</h3>
+<div class="space-y-2">
+<div class="flex items-center gap-4 bg-white rounded-xl p-4 min-h-[72px] justify-between shadow-sm">
+<div class="flex flex-col justify-center">
+<p class="text-gray-900 text-base font-medium leading-normal">Vegan</p>
+<p class="text-gray-500 text-sm font-normal leading-normal">Exclude all animal products</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-gray-200 p-0.5 transition-colors has-[:checked]:bg-[var(--primary-color)]">
+<div class="h-full w-[27px] rounded-full bg-white transition-transform transform translate-x-0 checked:translate-x-full" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px, rgba(0, 0, 0, 0.06) 0px 1px 2px;"></div>
+<input class="peer sr-only" type="checkbox"/>
+<span class="absolute left-0 w-full h-full rounded-full transition-all duration-300 ease-in-out">
+<span class="absolute left-1 top-1/2 -translate-y-1/2 h-[27px] w-[27px] bg-white rounded-full shadow-md transition-transform duration-300 ease-in-out peer-checked:translate-x-[20px]"></span>
+</span>
+</label>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white rounded-xl p-4 min-h-[72px] justify-between shadow-sm">
+<div class="flex flex-col justify-center">
+<p class="text-gray-900 text-base font-medium leading-normal">Vegetarian</p>
+<p class="text-gray-500 text-sm font-normal leading-normal">Exclude meat, allow dairy and eggs</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-gray-200 p-0.5 transition-colors has-[:checked]:bg-[var(--primary-color)]">
+<input checked="" class="peer sr-only" type="checkbox"/>
+<span class="absolute left-0 w-full h-full rounded-full transition-all duration-300 ease-in-out">
+<span class="absolute left-1 top-1/2 -translate-y-1/2 h-[27px] w-[27px] bg-white rounded-full shadow-md transition-transform duration-300 ease-in-out peer-checked:translate-x-[20px]"></span>
+</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+<div class="px-4 mt-6">
+<h3 class="text-gray-900 text-xl font-bold leading-tight tracking-[-0.015em] pb-3">Allergies &amp; Intolerances</h3>
+<div class="space-y-2">
+<div class="flex items-center gap-4 bg-white rounded-xl p-4 min-h-[72px] justify-between shadow-sm">
+<div class="flex flex-col justify-center">
+<p class="text-gray-900 text-base font-medium leading-normal">Gluten-Free</p>
+<p class="text-gray-500 text-sm font-normal leading-normal">Avoid products containing gluten</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-gray-200 p-0.5 transition-colors has-[:checked]:bg-[var(--primary-color)]">
+<input checked="" class="peer sr-only" type="checkbox"/>
+<span class="absolute left-0 w-full h-full rounded-full transition-all duration-300 ease-in-out">
+<span class="absolute left-1 top-1/2 -translate-y-1/2 h-[27px] w-[27px] bg-white rounded-full shadow-md transition-transform duration-300 ease-in-out peer-checked:translate-x-[20px]"></span>
+</span>
+</label>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white rounded-xl p-4 min-h-[72px] justify-between shadow-sm">
+<div class="flex flex-col justify-center">
+<p class="text-gray-900 text-base font-medium leading-normal">Dairy-Free</p>
+<p class="text-gray-500 text-sm font-normal leading-normal">Avoid products containing dairy</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-gray-200 p-0.5 transition-colors has-[:checked]:bg-[var(--primary-color)]">
+<input class="peer sr-only" type="checkbox"/>
+<span class="absolute left-0 w-full h-full rounded-full transition-all duration-300 ease-in-out">
+<span class="absolute left-1 top-1/2 -translate-y-1/2 h-[27px] w-[27px] bg-white rounded-full shadow-md transition-transform duration-300 ease-in-out peer-checked:translate-x-[20px]"></span>
+</span>
+</label>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white rounded-xl p-4 min-h-[72px] justify-between shadow-sm">
+<div class="flex flex-col justify-center">
+<p class="text-gray-900 text-base font-medium leading-normal">Nut Allergy</p>
+<p class="text-gray-500 text-sm font-normal leading-normal">Avoid products containing nuts</p>
+</div>
+<div class="shrink-0">
+<label class="relative flex h-[31px] w-[51px] cursor-pointer items-center rounded-full border-none bg-gray-200 p-0.5 transition-colors has-[:checked]:bg-[var(--primary-color)]">
+<input class="peer sr-only" type="checkbox"/>
+<span class="absolute left-0 w-full h-full rounded-full transition-all duration-300 ease-in-out">
+<span class="absolute left-1 top-1/2 -translate-y-1/2 h-[27px] w-[27px] bg-white rounded-full shadow-md transition-transform duration-300 ease-in-out peer-checked:translate-x-[20px]"></span>
+</span>
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sticky bottom-0 bg-white/80 backdrop-blur-sm py-4">
+<div class="flex px-4">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 flex-1 bg-[var(--primary-color)] text-white text-base font-bold leading-normal tracking-[0.015em] shadow-lg shadow-red-500/30 hover:bg-red-600 transition-colors">
+<span class="truncate">Save Preferences</span>
+</button>
+</div>
+</div>
+</div>
+
+</body></html>
