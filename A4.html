@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Plus+Jakarta+Sans%3Awght%40400%3B500%3B700%3B800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        body {
+            min-height: max(884px, 100dvh);
+        }
+        @keyframes scan-barcode {
+            0%, 100% { top: 0; }
+            50% { top: calc(100% - 2px); }
+        }
+        .animate-scan-barcode {
+            animation: scan-barcode 2.5s infinite ease-in-out;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-black">
+<div class="relative flex size-full min-h-screen flex-col bg-black justify-between group/design-root overflow-x-hidden" style='font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;'>
+<div class="flex-grow flex flex-col" x-data="{ scanMode: 'barcode' }">
+<div class="flex items-center p-4 justify-end">
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-white/10 text-white">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="px-6 pt-2 pb-6 text-center">
+<h3 class="text-white text-3xl font-bold leading-tight">Scan Product</h3>
+<p class="text-white/70 text-base font-normal leading-normal pt-2" x-show="scanMode === 'barcode'">Center the barcode in the frame</p>
+<p class="text-white/70 text-base font-normal leading-normal pt-2" x-show="scanMode === 'ingredients'">Fit the ingredients list in the frame</p>
+</div>
+<div class="flex-grow w-full px-4 relative flex items-center justify-center">
+<div class="absolute inset-x-8 top-1/2 -translate-y-1/2 z-10">
+<div :class="scanMode === 'barcode' ? 'h-28' : 'h-64'" class="relative overflow-hidden">
+<div :class="{ 'border-dashed': scanMode === 'ingredients' }" class="absolute inset-0 border-4 border-white rounded-2xl"></div>
+<div class="absolute left-0 w-full h-0.5 bg-[#ea2a33] animate-scan-barcode" style="box-shadow: 0 0 10px #ea2a33;" x-show="scanMode === 'barcode'"></div>
+</div>
+</div>
+<div class="w-full bg-center bg-no-repeat bg-cover aspect-[3/4] rounded-2xl overflow-hidden" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDLJwGy3jQ88xVLbyeLMZ5jUxYFAq9RuSZ9Wc_o74D0y2YYr4524tf31Z52RfAUTesGeWFdJ0-MtMjEQ2EPn_EsHwmfLisGwvMonKkiZnf9xQMSBhoq3GJeI7-I84wFPxCVwG8d4JQkkFl6d4ORpPsKW7rx7uW2yd_OIuHn9GisDMSKE_0twflMGsMu4tMBLdeNzgix1DMqCTEtVptWXIxNvuqxWXWTIok8tD_gBkYf4MCckESc-vV8oeJmfrlrl3Uqgldnx-WZUjA");'></div>
+</div>
+<div class="flex justify-center py-4">
+<div class="flex rounded-full bg-white/10 p-1">
+<button :class="scanMode === 'barcode' ? 'bg-white text-black' : 'text-white/70'" @click="scanMode = 'barcode'" class="px-4 py-2 text-sm font-semibold rounded-full">Barcode</button>
+<button :class="scanMode === 'ingredients' ? 'bg-white text-black' : 'text-white/70'" @click="scanMode = 'ingredients'" class="px-4 py-2 text-sm font-semibold rounded-full">Ingredients</button>
+</div>
+</div>
+<div class="px-6 pt-4 pb-4 flex flex-col items-center">
+<button class="flex w-16 h-16 cursor-pointer items-center justify-center overflow-hidden rounded-full bg-white text-black">
+<span class="material-symbols-outlined text-4xl">photo_camera</span>
+</button>
+<button class="mt-4 text-white text-sm font-semibold">Upload from Gallery</button>
+</div>
+</div>
+<div class="sticky bottom-0">
+<div class="flex gap-2 border-t border-white/10 bg-black px-4 pt-3 pb-5">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-white/50" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Home</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-white/50" href="#">
+<span class="material-symbols-outlined">search</span>
+<span class="text-xs">Search</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-white" href="#">
+<span class="material-symbols-outlined text-[#ea2a33]">camera</span>
+<span class="text-xs text-[#ea2a33]">Scan</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-white/50" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="text-xs">Saved</span>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-white/50" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs">Profile</span>
+</a>
+</div>
+</div>
+</div>
+<script defer="" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+
+</body></html>
